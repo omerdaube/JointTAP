@@ -3,7 +3,7 @@
 **C++ implementation of the Joint Task Assistance Planning (JointTAP) framework**
 proposed in *Joint Task Assistance Planning via Nested Branch and Bound*, ICRA 2026.
 
-This repository contains an implementation of a nested Branch and Bound framework for solving the JointTAP problem, including an incremental optimal timing subsolver and a linear programming based upper bound.
+This repository contains an implementation of a nested branch-and-bound framework for solving the JointTAP problem, including an incremental optimal timing subsolver and a linear programming based upper bound.
 
 ---
 
