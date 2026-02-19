@@ -56,7 +56,7 @@ https://github.com/eitanbloch/TAP/
 
 ## Build Instructions
 
-Example using CMake:
+Using CMake:
 
 ```bash
 mkdir build
