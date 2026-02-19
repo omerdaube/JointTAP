@@ -48,9 +48,7 @@ This module is the primary low level solver used by the JointTAP framework.
 
 #### 4. Assistance OTP (Originally, OPTP)
 
-Contains the original implementation of the AssistanceOTP solver, adapted from:
-
-https://github.com/eitanbloch/TAP/
+Contains the [original implementation](https://github.com/eitanbloch/TAP/) of the AssistanceOTP solver.
 
 ---
 
