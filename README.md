@@ -3,7 +3,7 @@
 **C++ implementation of the Joint Task Assistance Planning framework**
 proposed in *Joint Task Assistance Planning via Nested Branch and Bound*, ICRA 2026.
 
-This repository contains an implementation of a nested Branch and Bound framework for solving the JointTAP problem, including an incremental optimal timing subsolver and a linear programming based upper bound oracle.
+This repository contains an implementation of a nested Branch and Bound framework for solving the JointTAP problem, including an incremental optimal timing subsolver and a linear programming based upper bound.
 
 ---
 
@@ -34,15 +34,11 @@ JointTAP addresses coordinated planning between a **task robot** and an **assist
 
 Implements the nested Branch and Bound framework corresponding to **Algorithms 2 and 3** in the paper.
 
----
-
-#### 2. Upper Bound Oracle
+#### 2. Upper Bound Computation
 
 **Files:** `lp_bound.h`, `lp_bound.cpp`
 
 Implements the bounding technique described in **Section VI-A** of the paper.
-
----
 
 #### 3. Incremental OTP Solver
 
@@ -52,20 +48,15 @@ Implements the **incremental optimal timing subproblem solver (Algorithm 1)**. T
 
 * Maintains interval structures incrementally
 * Reuses previous computations when intervals change
-* Efficiently propagates reward information
 * Supports dynamic updates during search
 
 This module is the primary low level solver used by the JointTAP framework.
 
----
-
-#### 4. Assistance OTP (Baseline Implementation)
+#### 4. Assistance OTP (Originally, OPTP)
 
 Contains the original implementation of the AssistanceOTP solver, adapted from:
 
 https://github.com/eitanbloch/TAP/
-
-This implementation serves as a reference baseline and compatibility layer for the incremental solver.
 
 ---
 
@@ -79,5 +70,3 @@ cd build
 cmake ..
 make
 ```
-
-This produces executables and libraries depending on the configuration.
